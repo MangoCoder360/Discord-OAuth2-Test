@@ -1,7 +1,7 @@
-<h2 style="font-family:sans-serif;", id="text"></h2>
+<h2 style="font-family:sans-serif;", id="text">Error! URL Parameters not specified</h2>
 <script>
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const discordCode = urlParams.get('code')
-document.getElementById("text").innerHTML = "we got dat api key, here it is: "+discordCode;
+document.getElementById("text").innerHTML = discordCode;
 </script>
