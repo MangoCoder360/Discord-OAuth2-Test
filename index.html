@@ -1,7 +1,12 @@
-<h2 style="font-family:sans-serif;", id="text"></h2>
+<h2>Totally Legit Gamedev - Developer/Partner Portal</h2>
+<button onclick="login()">Login with Discord</button>
+<style>
+html,body{
+    font-family: sans-serif;
+}
+</style>
 <script>
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-const discordCode = urlParams.get('code')
-document.getElementById("text").innerHTML = "we got dat api key, here it is: "+discordCode;
+    function login() {
+        window.location.replace("https://discord.com/api/oauth2/authorize?client_id=886389211631091752&redirect_uri=https%3A%2F%2Fdiscord-oauth-test.netlify.app%2Fredirect.html&response_type=code&scope=identify")
+    }
 </script>
